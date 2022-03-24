@@ -1,0 +1,103 @@
+Pop_Layout := RECORD
+ STRING  FullName;
+ STRING   FirstName;
+  STRING  LastName;
+  STRING Gender;
+  STRING Status;
+ INTEGER Region;
+ STRING Ethnicity;
+  STRING Occupation_primary;
+   STRING MaritalStatus;
+  STRING Spouse_FirstName;
+   STRING Spouse_Last Name;
+ STRING  Spouse_Gender;
+   STRING Spouse_RaceEthnicity;
+   STRING Spouse_Birthday;
+   INTEGER Spouse_Age;
+   STRING Spouse_Occupation;
+   STRING Street;
+   STRING City;
+   STRING State;
+  INTEGER ZipCode;
+  INTEGER Religion_Christian;
+  INTEGER Religion_Muslim;
+  INTEGER Religion_Jewish;
+   INTEGER Religion_Hindu;
+   INTEGER Religion_Buddhist;
+   INTEGER Religion_Other;
+   INTEGER Religion_Spiritual;
+   INTEGER Religion_None;
+ STRING RoleofFaith_primary;
+  STRING RoleofFaith_spouse;
+  INTEGER Alcohol_Occasional;
+  INTEGER Alcohol_Responsible;
+  INTEGER Alcohol_Irresponsible;
+  INTEGER DrugUse;
+  INTEGER Marijuana_Occasional;
+  INTEGER Marijuana_Regular;
+  INTEGER Cigarettes_Occasional;
+  INTEGER Cigarettes_Regular;
+   INTEGER Vaping_Occasional;
+  INTEGER Vaping_Regular;
+   INTEGER JobRetentionChallenges;
+ STRING DayOff_primary;
+  STRING DayOff_spouse;
+  STRING FavoritPlace_primary;
+  STRING FavoritePlace_spouse;
+  STRING Personality_primary;
+  STRING Personality_spouse;
+  INTEGER SocialStyle_Introverted;
+   INTEGER SocialStyle_Extraverted;
+   INTEGER SocialStyle_Both;
+   STRING SadnessResponse_primary;
+  STRING SadnessResponse_spouse;
+ STRING AngerResponse_primary;
+  STRING Anger Response_spouse;
+   INTEGER Continuing Education;
+  INTEGER Supports_Holidays;
+  INTEGER Supports_Job;
+   INTEGER Supports_Parenting;
+  INTEGER Supports_Medical;
+  INTEGER Supports_Legal;
+   INTEGER Supports_Budgeting;
+  INTEGER Supports_MentalHealth;
+  INTEGER Supports_Resources;
+  INTEGER Supports_Social;
+ STRING Multiple_Matches;
+ STRING Match_Housing;
+  STRING Emergency_Housing;
+   INTEGER CRIMINALCriminalHistory_Arrested;
+   INTEGER CriminalHistory_Jail;
+   INTEGER CriminalHistory_CurrentProbation;
+  INTEGER Children_Pregnant;
+  INTEGER Children_Custody1;
+  INTEGER Children_Custodymultiple;
+   INTEGER Children_Kincare1;
+   INTEGER Children_Kincaremultiple;
+  INTEGER Children_Welfare1;
+  INTEGER Children_Welfaremultiple;
+  INTEGER Bio_Important;
+  INTEGER Bio_Difficult;
+   INTEGER Sexuality_Heterosexual;
+   INTEGER Sexuality_Homosexual;
+  INTEGER Sexuality_Bisexual;
+   INTEGER Gender_Male;
+  INTEGER Gender_Female;
+  INTEGER Gender_Transgender;
+  INTEGER Gender_Non_binary;
+ DECIMAL8_6 Latitude;
+ DECIMAL8_6 Logatitude;
+  
+END;
+Pop_DS := DATASET([
+      
+  {Alex & Tracey Hodge,Tracey,Hodge,Female,Completed Training,7,,Industrial designer,Married,Alex,,Male,White,11/25/1992,29,PBX operator,2571 Central Ave,Augusta,Georgia,30904,5,3,3,0,5,4,2,4,Exclusive,Inclusive,5,5,0,0,3,0,4,1,3,5,0,Friends/Family,Read/Walk,Nature,Pampered,Friendly,Friendly,5,3,3,Advice,Advice,Reconcile,Reconcile,0,5,5,5,5,5,4,1,5,5,checked,,,3,1,0,4,0,3,0,5,3,2,1,4,5,3,4,4,4,2,3,33.471234,-82.027644}
+  {Alice Keeney,Alice,Keeney,Female,Interested,6,,Administrative director,,,,,,,,,1113 Washington St,Perry,Georgia,31069,5,4,3,4,4,5,4,2,Unimportant,,5,1,2,5,5,4,4,1,3,5,2,Movie/Play,,Nature,,Shy,,0,3,3,Advice,,React,,5,4,4,5,1,5,4,5,5,0,,checked,,2,2,1,4,1,3,1,2,1,5,2,3,5,4,5,1,5,3,5,32.460434,-83.733486}
+  {Alice Lefebvre,Alice,Lefebvre,Female,OOS,13,,Sewer pipe cleaner,Single,,,,,,,,2730 Peachtree Industrial Blvd #108,Duluth,Georgia,30097,5,3,4,4,5,3,3,0,Inclusive,,5,5,3,3,4,0,4,5,4,4,4,Home,,Pampered,,Shy,,3,3,1,Advice,,Reconcile,,5,4,5,4,5,4,4,5,4,5,checked,,,0,3,0,5,5,0,1,1,3,2,2,5,5,4,4,1,1,5,5,34.022499,-84.143721111111111111111}
+  {Alice Sanford,Alice,Sanford,Female,Awaiting Training,7,,Digital electronic prepress worker,Single,,,,,,,,3118 William Few Pkwy #2,Evans,Georgia,30809,5,5,3,0,4,5,2,1,Exclusive,,5,4,2,0,5,5,4,5,3,4,3,Friends/Family,,Pampered,,Adventurous,,4,1,3,Alone,,Reconcile,,4,4,4,4,4,4,4,5,4,4,,checked,,4,4,1,5,3,3,0,1,0,5,5,2,5,4,0,4,5,3,4,33.573771,-82.192053}
+  {Alicia Johnston,Alicia,Johnston,Female,Awaiting Training,14,,Dispatcher,,,,,,,,,2316 Main St Suite A,Tucker,Georgia,30084,5,5,3,5,3,0,3,4,Unimportant,,5,4,4,0,1,2,5,1,0,4,4,Shop,,Pampered,,Reserved,,4,3,3,Alone,,Process,,3,4,5,4,5,5,5,4,4,5,checked,,checked,0,1,0,4,4,5,2,3,2,4,2,3,5,4,5,1,4,2,4,33.852666,-84.214499}
+  {Allan & Lois McCune,Lois,McCune,Female,Awaiting Training,13,,Central office operator,Married,Allan,,,,11/1/1965,56,"Dredge, excavating, and loading machine operator",3651 Peachtree Pkwy,Suwanee,Georgia,30024,5,4,4,5,4,4,5,5,Inclusive,Exclusive,5,4,3,0,3,4,2,0,1,2,3,Home,Friends/Family,Pampered,Nature,Friendly,Shy,2,3,3,Listen,Listen,Process,React,5,5,4,5,4,1,4,4,5,5,checked,,checked,3,4,1,3,4,5,4,3,3,3,5,4,5,5,4,5,5,5,2,34.069741,-84.166965}
+  {Allan Marquez & Jennifer Garcia,Allan,Marquez,Male,Not Moving Forward,13,,Financial planner,Married,Jennifer,Garcia,,,11/15/1971,50,Smoke jumper,1467 Patterson Street,Lawrenceville,Georgia,30043,5,1,1,4,2,1,4,3,Inclusive,Exclusive,3,5,2,1,5,3,3,5,5,3,4,Home,Friends/Family,Event,New,Shy,Friendly,5,3,4,Advice,Listen,React,Reconcile,4,4,4,4,5,4,5,2,5,4,checked,,checked,1,0,2,3,0,3,3,2,2,1,5,3,5,5,4,0,3,1,1,,}
+  {Allen & Brenda Hardy,Allen,Hardy,Male,OOS,7,,Web writer,Married,Brenda,,,,2/3/1976,45,Agricultural laborer,5159 Columbia Rd,Grovetown,Georgia,30813,5,5,5,4,5,0,3,5,Exclusive,Unimportant,5,5,5,1,3,5,4,4,5,4,5,Shop,Shop,Nature,Pampered,Solitary,Solitary,5,4,5,Advice,Listen,Reconcile,Withdraw,4,4,1,5,5,1,4,4,5,5,,,,0,1,4,4,4,0,5,1,0,4,0,4,5,5,0,5,2,3,5,33.509227,-82.200952}
+  {Alton & Henrietta Pereira,Henrietta,Pereira,Female,Interested,2,,Apartment manager,Married,Alton,,,,7/28/1991,30,Unlicensed assistive personnel,655 Atlanta Rd #607,Cumming,Georgia,30040,5,5,4,2,5,1,5,3,Exclusive,Unimportant,5,5,0,5,5,1,5,3,4,3,0,Home,Shop,Pampered,Pampered,Adventurous,Reserved,3,4,5,Listen,Listen,Reconcile,Withdraw,3,5,4,5,4,5,4,4,5,5,,checked,checked,4,5,5,4,4,4,5,1,4,1,3,0,5,5,0,5,0,4,2,34.188972,-84.144338}  
+], 
